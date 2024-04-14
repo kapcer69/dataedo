@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TodosComponent } from './todos/components/todos.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [TodosComponent],
+  template: `<app-todos />`,
+  providers: []
 })
-export class AppComponent {
-  title = 'dataedo';
-}
+export class AppComponent {}
